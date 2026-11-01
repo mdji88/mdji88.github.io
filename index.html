@@ -32,9 +32,7 @@
   .card p{margin:0 0 12px;color:var(--muted);font-size:.93rem;flex:1}
   .tags span{display:inline-block;font-size:.75rem;padding:2px 9px;margin:0 6px 6px 0;border-radius:99px;background:var(--bg);border:1px solid var(--border);color:var(--muted)}
   .card a{color:var(--accent);text-decoration:none;font-size:.9rem;font-weight:600}
-  ul.list{padding-left:18px;color:var(--muted)}
-  ul.list li{margin-bottom:8px}
-  ul.list a{color:var(--accent);text-decoration:none}
+  .card .status{color:var(--muted);font-size:.85rem}
   footer{padding:32px 0;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border)}
 </style>
 </head>
@@ -42,7 +40,7 @@
 
 <header class="nav"><div class="wrap">
   <strong>Masoud</strong>
-  <nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#findings">Findings</a><a href="#contact">Contact</a></nav>
+  <nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -67,49 +65,41 @@
 
 <section id="projects">
   <h2>Projects</h2>
-  <p style="color:var(--muted);margin-top:-8px">Work in progress: these projects are being built and published here as they are completed.</p>
   <div class="grid">
 
     <div class="card">
-      <h3>VaR & ES Backtesting Toolkit</h3>
-      <p>Historical, parametric and filtered-historical VaR on a sample portfolio, with Kupiec and Christoffersen backtests and a traffic-light summary.</p>
-      <div class="tags"><span>Python</span><span>pandas</span><span>Market risk</span></div>
-      <a href="https://github.com/mdji88">Coming soon</a>
+      <h3>Gaussian Copula and National Mood: Senate Seat Counts</h3>
+      <p>How much does a shared national-mood factor change the odds of extreme outcomes, compared with treating races as independent? A credit-portfolio (Vasicek / CDO) model applied to elections, with synthetic inputs.</p>
+      <div class="tags"><span>Gaussian copula</span><span>Monte Carlo</span><span>Python</span></div>
+      <a href="https://github.com/mdji88/senate-gaussian-copula">View repo &rarr;</a>
     </div>
 
     <div class="card">
-      <h3>Yield Curve Bootstrapping & Rate Shocks</h3>
-      <p>Build a curve from public rates data, compute DV01 and key-rate durations, and apply parallel, steepener and flattener scenarios.</p>
-      <div class="tags"><span>Fixed income</span><span>QuantLib</span></div>
-      <a href="https://github.com/mdji88">Coming soon</a>
+      <h3>AI Beta Factor in Credit Markets</h3>
+      <p>Work in progress. Investigates an AI-related beta factor in credit markets.</p>
+      <div class="tags"><span>Credit</span><span>Factor models</span><span>AI</span></div>
+      <span class="status">In progress</span>
+    </div>
+
+    <div class="card">
+      <h3>Equity Momentum in Credit</h3>
+      <p>Work in progress. Studies equity momentum signals in credit markets.</p>
+      <div class="tags"><span>Credit</span><span>Momentum</span><span>Cross-asset</span></div>
+      <span class="status">In progress</span>
     </div>
 
     <div class="card">
       <h3>Simple CVA from Scratch</h3>
       <p>Monte Carlo exposure profile for an interest rate swap, EPE/ENE, and a CVA estimate with a clear write-up of assumptions and limits.</p>
       <div class="tags"><span>xVA</span><span>Monte Carlo</span><span>Derivatives</span></div>
-      <a href="https://github.com/mdji88">Coming soon</a>
+      <span class="status">Planned</span>
     </div>
 
     <div class="card">
       <h3>Historical Stress Scenario Library</h3>
       <p>Replay 2008, 2020 and 2022 market moves on a sample book and compare against hypothetical shocks. Includes P&L attribution by risk factor.</p>
       <div class="tags"><span>Stress testing</span><span>Scenarios</span></div>
-      <a href="https://github.com/mdji88">Coming soon</a>
-    </div>
-
-    <div class="card">
-      <h3>LLM Assistant for Risk Documents</h3>
-      <p>RAG prototype that answers questions over policy and regulatory text with citations, plus notes on where it fails.</p>
-      <div class="tags"><span>LLM</span><span>RAG</span><span>Agents</span></div>
-      <a href="https://github.com/mdji88">Coming soon</a>
-    </div>
-
-    <div class="card">
-      <h3>Commodity & Macro Dashboard</h3>
-      <p>Tracks oil, curve structure and macro indicators, with short notes on regime changes and what drove them.</p>
-      <div class="tags"><span>Commodities</span><span>Macro</span><span>Visualization</span></div>
-      <a href="https://github.com/mdji88">Coming soon</a>
+      <span class="status">Planned</span>
     </div>
 
   </div>
